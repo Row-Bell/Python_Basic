@@ -145,7 +145,7 @@ plt.title('My scatter plot!')
 plt.legend()
 
 #function to show the plot
-plt.show()'''
+plt.show()
 
 ##------------Pie Chart -------------######
 
@@ -165,4 +165,25 @@ plt.pie(slices, labels = activities, colors = colors, startangle = -30, shadow =
 plt.legend()
 
 #showing the plot
+plt.show()'''
+
+##------------Plotting curves of given equations-------------######
+
+#importing the reuired modules
+import numpy as np
+
+#setting the x-coordinates
+x = np.arange(0,2*(np.pi), 0.1)
+
+#setting the corresponding y-coordinates
+y = np.sin(x1)
+
+
+#plotting the points
+plt.plot(x,y)
+
+#plot title
+plt.title('Sine Wave')
+
+#function to show the plot
 plt.show()
