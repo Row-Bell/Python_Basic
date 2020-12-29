@@ -119,7 +119,7 @@ plt.ylabel('No. of people')
 plt.title('My histogram')
 
 #function to show the plot
-plt.show()'''
+plt.show()
 
 ##------------Scatter Plot -------------######
 
@@ -145,5 +145,24 @@ plt.title('My scatter plot!')
 plt.legend()
 
 #function to show the plot
-plt.show()
+plt.show()'''
 
+##------------Pie Chart -------------######
+
+#defining labels
+activities = ['eat', 'sleep', 'work', 'play']
+
+#portion covered by each label
+slices = [3,7,8,6]
+
+#color for each label
+colors = ['r', 'y', 'g', 'b']
+
+#plotting the pie chart
+plt.pie(slices, labels = activities, colors = colors, startangle = -30, shadow = True, explode = (0,0,0.1,0), radius = 1.2, autopct = '%1.1f%%')
+
+#plottting legend
+plt.legend()
+
+#showing the plot
+plt.show()
