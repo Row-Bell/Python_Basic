@@ -1,5 +1,10 @@
 #importing the required module
 import matplotlib.pyplot as plt
+
+#import os
+#print("PYTHONPATH:", os.environ.get('PYTHONPATH'))
+#print("PATH:", os.environ.get('PATH'))
+
 '''
 #x axis value
 x = [1,2,3]
@@ -176,7 +181,7 @@ import numpy as np
 x = np.arange(0,2*(np.pi), 0.1)
 
 #setting the corresponding y-coordinates
-y = np.sin(x1)
+y = np.sin(x)
 
 
 #plotting the points
@@ -187,3 +192,5 @@ plt.title('Sine Wave')
 
 #function to show the plot
 plt.show()
+
+print('Hello World!')
