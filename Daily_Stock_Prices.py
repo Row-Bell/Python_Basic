@@ -1,4 +1,4 @@
-import requests
+'''import requests
 import pandas as pd
 import matplotlib.pyplot as plt 
 
@@ -9,21 +9,7 @@ companies = ['AAPL', 'FB', 'GOOG', 'F', 'TSLA']
 listofdf = []
 
 #API end point request
-requests.get(f"https://financialmodelingprep.com/api/v3/historical-price-full/aapl?serietype=line")
-
-#outcome
-{
-    "symbol":"AAPL",
-    "historical": [
-        {"date": "1989-09-19",
-        "close": 1.54},
-        {"date": "1989-09-20",
-        "close": 1.59},
-        {"date": "1989-09-21",
-        "close": 1.6},
-    ]
-}
-
+#requests.get(f"https://financialmodelingprep.com/api/v3/historical-price-full/aapl?serietype=line")
 
 #For loop for AAPL
 for item in companies:
@@ -33,7 +19,7 @@ for item in companies:
     histprices = histprices.json()
 
 ##Parse the API response and select only last 600 days of prices
-    histprices - histprices['historical'][-600:]
+    #histprices = histprices["historical"][-600:]
 
 ##Convert from dict to pandas datafram
     histpricesdf = pd.DataFrame.from_dict(histprices)
@@ -60,3 +46,18 @@ plt.legend(histpriceconcat.columns)
 
 #Saving the graph into a JPG file
 plt.savefig('fool.png', bbox_inches='tight')
+
+# Import the yfinance. If you get module not found error the run !pip install yfinance from your Jupyter notebook
+import yahoofinance as yf
+
+# Get the data for the stock AAPL
+data = yf.download('AAPL','2016-01-01','2019-08-01')
+
+# Import the plotting library
+import matplotlib.pyplot as plt
+
+
+# Plot the close price of the AAPL
+data['Adj Close'].plot()
+plt.show()'''
+
