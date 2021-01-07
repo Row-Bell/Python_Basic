@@ -55,3 +55,6 @@ plt.title('Ethereum Earned Over Half-a-Year')
 
 #function to show the plot
 plt.show()
+
+#function to show the plot
+plt.show()
